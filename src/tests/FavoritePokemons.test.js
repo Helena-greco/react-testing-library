@@ -8,12 +8,13 @@ describe('3. Teste o componente <FavoritePokemons.js />', () => {
   se a pessoa não tiver pokémons favoritos.`, () => {
     const { history } = renderWithRouter(<App />);
     history.push('/favorites');
+
     const message = screen.getByText('No favorite pokemon found');
     expect(message).toBeInTheDocument();
   });
 
-  test('se é exibido todos os cards de pokémons favoritados.', () => {
-    const { history } = renderWithRouter(<App />);
-    history.push('/favorites');
-  });
+  // test('se é exibido todos os cards de pokémons favoritados.', () => {
+  //   const { history } = renderWithRouter(<App />);
+  //   history.push('/favorites');
+  // });
 });

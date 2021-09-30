@@ -4,6 +4,10 @@ import renderWithRouter from './renderWithRouter';
 import App from '../App';
 
 describe('2. Teste o componente <About.js />.', () => {
+  // test('se a página contém as informações sobre a Pokédex.', () => {
+
+  // });
+
   test('se a página contém um heading h2 com o texto About Pokédex.', () => {
     const { history } = renderWithRouter(<App />);
     history.push('/about');
