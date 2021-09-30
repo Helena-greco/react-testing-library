@@ -57,7 +57,7 @@ describe('1. Teste o componente <App.js />', () => {
 
     const textNotFound = screen.getByRole('heading', {
       level: 2,
-      name: 'Page requested not found Crying emoji',
+      name: /Page requested not found/,
     });
 
     expect(textNotFound).toBeInTheDocument();
