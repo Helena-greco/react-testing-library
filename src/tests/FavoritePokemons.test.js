@@ -13,8 +13,8 @@ describe('3. Teste o componente <FavoritePokemons.js />', () => {
     expect(message).toBeInTheDocument();
   });
 
-  // test('se é exibido todos os cards de pokémons favoritados.', () => {
-  //   const { history } = renderWithRouter(<App />);
-  //   history.push('/favorites');
-  // });
+  test('se é exibido todos os cards de pokémons favoritados.', () => {
+    const { history } = renderWithRouter(<App />);
+    history.push('/favorites');
+  });
 });
